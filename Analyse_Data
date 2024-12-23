@@ -1,0 +1,6 @@
+# Identify the top 5 cryptocurrencies by market cap
+top_5_cryptos = sorted(data, key=lambda x: x['market_cap'], reverse=True)[:5]
+print("Top 5 Cryptocurrencies by Market Cap:")
+for crypto in top_5_cryptos:
+    print(f"{crypto['name']} ({crypto['symbol']}): ${crypto['market_cap']:,}")
+

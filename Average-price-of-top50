@@ -1,0 +1,4 @@
+# Calculate the average price of the top 50 cryptocurrencies
+total_price = sum(crypto['current_price'] for crypto in data)
+average_price = total_price / len(data)
+print(f"\nAverage Price of Top 50 Cryptocurrencies: ${average_price:.2f}")
